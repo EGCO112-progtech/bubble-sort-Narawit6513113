@@ -41,7 +41,6 @@ void bubbleSort(int a[],int n)
   for(i = 0 ; i < n-1 ; i++)
   {
     int sorted;
-    printf("round %d\n",i+1);
     for(j = 0 ; j <= n-1 ; j++)
     {
       if (a[j] > a[j+1])
