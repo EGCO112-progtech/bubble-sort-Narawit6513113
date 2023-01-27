@@ -1,7 +1,3 @@
-// selection sort function module in C
-#include <math.h>
-
-
 void swap(int *a,int *b);
 
 void display(int a[],int n){
@@ -17,34 +13,14 @@ void display(int a[],int n){
 void selectionSort(int data[], int length) 
 { 
 	int i, j, m, mi; 
-	for (i = 0; i < length - 1; i++)
-  {
-    mi = i;
-    for (j = i + 1; j < length; j++)
-    {
-      if (data[j] < data[mi]) mi = j;
-      
-      if (mi != i) swap(&data[i], &data[mi]);
 
-    }
   display(data,length);
-  }
 	
 } 
 
 
 
 void insertion(int a[],int n){
-  for (int i = 0; i < n; i++)
-  {
-    int j = i;
-    while (j > 0 && a[j-1] > a[j])
-    {
-      swap(&a[j-1], &a[j]);
-      j -= 1;
-    }
-    display(a, n);
-  }
 
 }
 
